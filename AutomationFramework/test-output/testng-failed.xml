@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="baseUrl" value="https://www.uaeexchange.com/"/>
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.unimoni.Reporting.ExtentListener"/>
+  </listeners>
+  <test thread-count="5" name="ABC Test(failed)">
+    <classes>
+      <class name="com.unimoni.test.HomeTest">
+        <methods>
+          <include name="intialiseDriver"/>
+          <include name="name"/>
+          <include name="readXml"/>
+        </methods>
+      </class> <!-- com.unimoni.test.HomeTest -->
+    </classes>
+  </test> <!-- ABC Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

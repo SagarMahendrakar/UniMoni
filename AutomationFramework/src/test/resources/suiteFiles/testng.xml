@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+
+	<parameter name="browser" value="chrome" />
+	<parameter name="baseUrl"
+		value="https://www.uaeexchange.com/" />
+	<listeners>
+		<listener class-name="com.unimoni.Reporting.ExtentListener"></listener>
+	</listeners>
+
+	<test name="ABC Test">
+
+		<classes>
+
+			<!-- <class name="com.unimoni.test.HomeTest"></class> -->
+
+			<class name="com.unimoni.test.Test"></class>
+		</classes>
+	</test>
+</suite> <!-- Suite -->
